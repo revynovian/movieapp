@@ -1,8 +1,9 @@
 export default function () {
   return (
-    <div className="mx-auto max-w-6xl space-y-4 p-10 sm:pt-40 min-h-screen">
-      <h1 className="text-2xl font-semibold text-red-700">About</h1>
-      <p>
+    <div className="mx-auto max-w-4xl p-10 md:pt-40 min-h-screen">
+      <h1 className="text-md sm:text-2xl font-semibold text-red-700">About</h1>
+      <div className="text-sm sm:text-md">
+      <p className="py-2">
         Layar, inspired by the Indonesian word for 'sail' or 'screen,' captures
         both the spirit of navigation and display, perfectly symbolizing the
         exploration of film and television. Just as a sail catches wind to guide
@@ -13,7 +14,7 @@ export default function () {
         classics. Dive deep into detailed profiles of actors, directors, and
         crew members, along with the latest reviews, trailers, and releases.
       </p>
-      <p>
+      <p className="py-2">
         At its core, the platform encourages freedom of exploration, offering a
         seamless browsing experience that lets you navigate through a vast
         collection of titles with ease. With personalized recommendations,
@@ -24,6 +25,8 @@ export default function () {
         your entertainment journey. Explore, discover, and immerse yourself in
         the captivating world of film and television like never before.
       </p>
+      </div>
+      
     </div>
   );
 }
