@@ -26,7 +26,7 @@ export default function Hero() {
                   <FaStar className="mx-0 my-auto px-0 text-center text-amber-300" />
                   <p className="px-0">8.0</p>
                 </div>
-                <div className="flex items-center gap-2 text-xs">
+                <div className="hidden items-center gap-2 text-xs sm:flex">
                   <p>2h35m</p>
                   <span>&#8226;</span>
                   <p>Action,Sci-Fi,Drama</p>
@@ -34,25 +34,26 @@ export default function Hero() {
                   <p>2021</p>
                 </div>
               </div>
-              <p className="py-2 text-xs text-zinc-400">
+              <p className="hidden py-2 text-xs text-zinc-400 sm:block">
                 A noble family becomes embroiled in a war for control over the
                 galaxy&apos;s most valuable asset while its heir becomes
                 troubled by visions of a dark future.
               </p>
-              <button className="m-1 mx-0 rounded-full bg-red-800/50 px-4 py-3 font-bold text-slate-100 hover:bg-red-700">
-                <HiMiniPlayCircle className="my-auto inline-block" />{" "}
-                <a
-                  href="https://www.youtube.com/watch?v=n9xhJrPXop4"
-                  target="_blank"
-                >
-                  Watch Trailer
+              <div className="flex">
+                <a  href="https://www.youtube.com/watch?v=n9xhJrPXop4"
+                    target="_blank" 
+                    className="w-fit m-1 mx-0 flex items-center gap-1 rounded-full bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
+                    <HiMiniPlayCircle /> Watch Trailer
                 </a>
-              </button>
+                <button className="m-1 mx-2 rounded-full bg-zinc-600/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
+                  <a href="/movie/438631"> More</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-5 h-max rounded-lg border border-zinc-500/50 p-7 md:mt-0 md:w-1/3 md:border-0">
+      <div className="mt-5 h-max rounded-lg border border-zinc-500/50 p-5 md:px-5 md:py-0 md:mt-0 md:w-2/5 md:border-0 flex-col items-center">
         <div>
           <p className="text-md font-semibold dark:text-zinc-300 sm:text-lg">
             Layar - Sail Through the World of Entertainment
@@ -64,10 +65,9 @@ export default function Hero() {
             fingertips.
           </p>
         </div>
-        <button className="m-3 mx-0 rounded-full bg-red-800 px-4 py-3 font-bold text-slate-100 hover:bg-red-700">
-          <MdExplore className="my-auto inline-block" />{" "}
-          <a href="/explore">Explore</a>
-        </button>
+        <a href="/explore" className="w-fit m-3 mx-0 flex items-center gap-1 rounded-full bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
+          <MdExplore /> Explore
+        </a>
       </div>
     </div>
   );

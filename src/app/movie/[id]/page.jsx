@@ -15,7 +15,7 @@ export default async function MoviePage({ params }) {
   const image = (checkImage ? urlImage: urlImagePlaceholder)
 
   return (
-    <div className="mx-auto max-w-6xl p-10 pt-40 sm:flex min-h-screen">
+    <div className="mx-auto max-w-6xl px-10 pt-32 sm:flex min-h-screen">
       <div className="relative">
         <Image
           src={image}
@@ -40,9 +40,9 @@ export default async function MoviePage({ params }) {
         <p className="text-sm">Release Date : {movie.release_date || movie.first_air_date}</p>
         <h3 className="pt-3 font-bold">Overview</h3>
         <p className="text-sm">{movie.overview}</p>
-        <button className="rounded-full bg-red-800 px-4 py-3 m-3 mx-0 font-bold text-slate-100 hover:bg-red-700">
-          <HiMiniPlayCircle className="inline-block"/> Watch Trailer
-        </button>
+        <a href="https://www.youtube.com/" className="w-fit flex items-center gap-1 m-3 mx-0 rounded-full bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
+          <HiMiniPlayCircle/> Watch Trailer
+        </a>
       </div>
     </div>
   );
