@@ -22,7 +22,7 @@ export default function Card({result}) {
             <h2 className="text-lg font-bold truncate">{result.title || result.name}</h2>
             <div className="flex items-center justify-between">
                 <p className="font-thin text-sm flex-grow">{year}</p>
-                <HiHeart/>
+                <HiHeart className="text-red-700"/>
                 <p className="font-thin text-sm px-2">{result.vote_count}</p>
             </div>
           </div>

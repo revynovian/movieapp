@@ -40,7 +40,7 @@ export default async function MoviePage({ params }) {
         <p className="text-sm">Release Date : {movie.release_date || movie.first_air_date}</p>
         <h3 className="pt-3 font-bold">Overview</h3>
         <p className="text-sm">{movie.overview}</p>
-        <a href="https://www.youtube.com/" className="w-fit flex items-center gap-1 m-3 mx-0 rounded-full bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
+        <a href="https://www.youtube.com/" target="_blank" className="w-fit flex items-center gap-1 m-3 mx-0 rounded-full bg-red-800 dark:bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
           <HiMiniPlayCircle/> Watch Trailer
         </a>
       </div>

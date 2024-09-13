@@ -55,7 +55,7 @@ export default function Hero() {
       </div>
       <div className="mt-5 h-max rounded-lg border border-zinc-500/50 p-5 md:px-5 md:py-0 md:mt-0 md:w-2/5 md:border-0 flex-col items-center">
         <div>
-          <p className="text-md font-semibold dark:text-zinc-300 sm:text-lg">
+          <p className="text-md font-bold dark:text-zinc-300 sm:text-lg drop-shadow-lg">
             Layar - Sail Through the World of Entertainment
           </p>
           <p className="sm:text-md text-left text-sm font-medium text-zinc-500">
@@ -65,7 +65,7 @@ export default function Hero() {
             fingertips.
           </p>
         </div>
-        <a href="/explore" className="w-fit m-3 mx-0 flex items-center gap-1 rounded-full bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
+        <a href="/explore" className="w-fit m-3 mx-0 flex items-center gap-1 rounded-full  bg-red-800 dark:bg-red-800/50 px-4 py-1 font-bold text-slate-100 hover:bg-red-700">
           <MdExplore /> Explore
         </a>
       </div>
