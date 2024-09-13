@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Movie App",
+  title: "Layar - Movie Database",
   description: "Movie Database",
 };
 

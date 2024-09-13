@@ -14,7 +14,7 @@ export default async function MoviePage({ params }) {
   const image = (checkImage ? urlImage: urlImagePlaceholder)
 
   return (
-    <div className="mx-auto max-w-6xl p-10 sm:flex">
+    <div className="mx-auto max-w-6xl p-10 sm:flex min-h-screen">
       <div className="relative">
         <Image
           src={image}
@@ -26,7 +26,7 @@ export default async function MoviePage({ params }) {
           src={image}
           width={600}
           height={400}
-          className="absolute rounded-lg blur-md z-1 -bottom-5 z-10 scale-95"
+          className="absolute rounded-lg blur-md z-10 scale-95 top-6"
         ></Image>
       </div>
       <div className="pt-10 sm:w-2/4 sm:pl-10 sm:pt-0">

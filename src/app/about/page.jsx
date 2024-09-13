@@ -1,27 +1,28 @@
 export default function () {
   return (
-    <div className="mx-auto max-w-6xl gap-4 space-y-4 p-3">
-      <h1 className="text-2xl font-medium text-amber-600">About</h1>
+    <div className="mx-auto max-w-6xl space-y-4 p-10">
+      <h1 className="text-2xl font-semibold text-red-700">About</h1>
       <p>
-        Layar Info is your go-to platform for everything related to movies, TV
-        shows, and entertainment. Whether you're a fan of blockbusters, indie
-        films, or binge-worthy series, our extensive database has something for
-        everyone. Explore detailed profiles of actors, directors, and crew
-        members, alongside comprehensive information on the latest releases,
-        reviews, and trailers. Layar Info makes it easy to discover new
-        favorites, stay updated on what's trending, and dive deep into the
-        behind-the-scenes world of entertainment.
+        Layar, inspired by the Indonesian word for 'sail' or 'screen,' captures
+        both the spirit of navigation and display, perfectly symbolizing the
+        exploration of film and television. Just as a sail catches wind to guide
+        a ship forward, Layar navigates you through the vast ocean of movies, TV
+        shows, and cinematic stories. Whether you're in search of a blockbuster
+        hit, an indie gem, or a binge-worthy series, our platform serves as your
+        compass, helping you uncover new favorites and revisit timeless
+        classics. Dive deep into detailed profiles of actors, directors, and
+        crew members, along with the latest reviews, trailers, and releases.
       </p>
       <p>
-        Built for passionate viewers and industry insiders alike, Layar Info
-        aims to be a reliable source for all things cinematic. Our user-friendly
-        interface and powerful search tools allow you to quickly access
-        information on your favorite titles, past and present. With features
-        like ratings, recommendations, and personalized watchlists, you can
-        curate your entertainment experience with ease. Whether you're looking
-        to learn more about the newest blockbuster or want to revisit a classic,
-        Layar Info is here to guide you through the ever-evolving world of film
-        and television.
+        At its core, the platform encourages freedom of exploration, offering a
+        seamless browsing experience that lets you navigate through a vast
+        collection of titles with ease. With personalized recommendations,
+        detailed information, and user-friendly features, it's designed to help
+        you discover hidden gems and stay updated on the latest releases.
+        Whether you're searching for the next blockbuster or revisiting a
+        beloved classic, the platform provides all the tools you need to curate
+        your entertainment journey. Explore, discover, and immerse yourself in
+        the captivating world of film and television like never before.
       </p>
     </div>
   );

@@ -10,7 +10,7 @@ export default function NavbarItems({ title, param }) {
   return (
     <div>
       <Link
-        className={`hover:border px-4 py-2 rounded-3xl ${genre === param ? "bg-amber-100 text-amber-700 font-semibold" : ""}`}
+        className={`text-sm border border-slate-300 dark:border-slate-600 px-4 py-2 rounded-3xl ${genre === param ? "bg-red-700 text-red-100 font-semibold" : ""}`}
         href={`/?genre=${param}`}
       >
         {title}
