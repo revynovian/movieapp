@@ -1,4 +1,4 @@
-export default function () {
+export default function About() {
   return (
     <div className="mx-auto max-w-4xl p-10 md:pt-40 min-h-screen">
       <h1 className="text-md sm:text-2xl font-semibold text-red-700">About</h1>

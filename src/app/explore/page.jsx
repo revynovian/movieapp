@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 
 const API_KEY = process.env.API_KEY;
 
-export default async function Home({searchParams}) {
+export default async function Explore({searchParams}) {
   const genre = searchParams.genre || 'fetchTrending'
   const res = await fetch(
         `https://api.themoviedb.org/3${
