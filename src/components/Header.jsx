@@ -12,7 +12,7 @@ export default function Header() {
     <nav className="flex md:px-60 pt-10 w-screen items-center justify-between p-10">
       
       <div className="flex gap-2 md:gap-4 items-center drop-shadow-md">
-        <Image src={'/layar-icon.png'} width={40} height={40}></Image>
+        <Image src={'/layar-icon.png'} width={40} height={40} alt="layar_icon"></Image>
         <h1 className="text-lg font-semibold md:font-extrabold md:text-2xl md:pr-10">Layar</h1>
         <Menuitems title="Home" address="/" Icon={HiHome}/>
         <Menuitems title="Explore" address="/explore" Icon={MdExplore}/>
