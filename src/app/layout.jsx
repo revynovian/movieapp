@@ -1,19 +1,14 @@
-import localFont from "next/font/local";
+import { Inter } from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
-import Navbar from "@/components/Navbar";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Footer from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Layar - Movie Database",
@@ -23,11 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.className}`}>
         <Providers>
           <Header/>
-          <Navbar/>
           {children}
+          <Footer/>
         </Providers>
       </body>
     </html>

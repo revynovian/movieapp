@@ -12,14 +12,14 @@ export default function ModeSwitch() {
   return (
     <div>
       {currentTheme === "dark" ? (
-        <HiSun
+        <HiMoon
           onClick={() => setTheme("light")}
-          className="cursor-pointer text-xl hover:text-red-500 text-slate-300"
+          className="cursor-pointer text-xl hover:text-red-700 text-zinc-400"
         />
       ) : (
-        <HiMoon
+        <HiSun
           onClick={() => setTheme("dark")}
-          className="cursor-pointer text-xl hover:text-red-500 text-slate-600"
+          className="cursor-pointer text-xl hover:text-red-700 text-zinc-700"
         />
       )}
     </div>

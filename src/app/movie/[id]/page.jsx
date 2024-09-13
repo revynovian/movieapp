@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { HiMiniPlayCircle } from "react-icons/hi2";
+const API_KEY = process.env.API_KEY;
 
 export default async function MoviePage({ params }) {
   const movieId = params.id;
   const res = await fetch(
-    `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`,
+    `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`,
   );
   const movie = await res.json();
   const year = (movie.first_air_date || movie.release_date || "N/A").slice(0, 4);
@@ -14,7 +15,7 @@ export default async function MoviePage({ params }) {
   const image = (checkImage ? urlImage: urlImagePlaceholder)
 
   return (
-    <div className="mx-auto max-w-6xl p-10 sm:flex min-h-screen">
+    <div className="mx-auto max-w-6xl p-10 pt-40 sm:flex min-h-screen">
       <div className="relative">
         <Image
           src={image}

@@ -16,7 +16,7 @@ export default function SearchBox() {
       <input
         type="text"
         placeholder="Search movie"
-        className="rounded-full border border-slate-300 px-4 py-2 text-gray-700 focus:outline-none dark:border-slate-700 dark:text-slate-300"
+        className="rounded-full border border-slate-300 px-3 py-1 sm:px-4 sm:py-2 text-gray-700 focus:outline-none dark:border-slate-700 dark:text-slate-300"
         value={search}
         onChange={(e)=> setSearch(e.target.value)}
       />

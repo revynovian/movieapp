@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <div className="mx-auto max-w-6xl space-y-4 p-10">
+    <div className="mx-auto max-w-6xl space-y-4 p-10 sm:pt-40 min-h-screen">
       <h1 className="text-2xl font-semibold text-red-700">About</h1>
       <p>
         Layar, inspired by the Indonesian word for 'sail' or 'screen,' captures

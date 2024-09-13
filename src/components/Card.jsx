@@ -14,6 +14,7 @@ export default function Card({result}) {
           width={500}
           height={300}
           className="rounded-lg group-hover:opacity-75 transition-opacity duration-300 drop-shadow-xl"
+          alt="poster"
           >
         </Image>
         <div className="text-slate-300 rounded-lg dark:bg-slate-950/20 p-2 absolute h-16 backdrop-blur-md bottom-0 w-full">
